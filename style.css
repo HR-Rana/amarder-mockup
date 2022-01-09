@@ -267,38 +267,18 @@ button{
 	position: relative;
 	overflow: hidden;
 }
-.section-2 h2 span{
-	display: none;
-	color: var(--primary);
-}
-.section-2 .mindset-area{
-	margin-top: 50px;
-}
-.section-2 .left-list p{
-	width: 60%;
-	font-size: 22px;
-	font-weight: 500;
-}
-.section-2 .right-industry-name{
-	width: 60%;
-	margin: 50px 0;
-	display: flex;
-	justify-content: space-between;
-	z-index: 999999;
-	
-}
 
 
 .section-2 .industry-qustion{
 	width: 48%;
-/*	background-image: url(images/IG Backgrounds/LLT IG Backgrounds FA-7.jpg);
-*/	background-repeat: no-repeat;
+	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	padding: 30px 15px;
 	font-size: 21px;
-	background-color: #59AFFF;
+	background-color: #636363;
 	position: relative;
+	color: white;
 }
 .section-2 .industry-answer{
 	background-color:hite;
@@ -311,14 +291,16 @@ button{
 	border-radius: 0px 60px 0px 0px;
 }
 
-.section-2 .industry-answer h4{
-	color:blue;
-	font-weight: 600;
-}
+
 .section-2 .industry-area{
 	display:flex;
 	width: 100%;
 	justify-content: space-between;
+}
+@media (max-width:450){
+	.section-2 .industry-area{
+		display: block;
+	}
 }
 
 .section-2 .secret-box{
@@ -390,6 +372,12 @@ button{
 }
 .author-box{
 	display: flex;
+}
+
+@media (max-width:450px){
+	.author-box{
+		display: block;
+	}
 }
 
 .auth-right{
@@ -529,10 +517,19 @@ button{
 }
 
 
+
+
+
+
+
+
+
+
+
 .section-5{
 	margin: 250px 0;
 	margin-bottom: 0;
-	background-color: ;
+	
 }
 .section-5 h2{
 	width: 60%;
@@ -540,26 +537,40 @@ button{
 	text-align: center;
 	transition: .6s;
 }
-.section-5:hover h2 span{
-	color: blue;
-}
+
 
 .section-5 img{
-	width: 400px;
-	height: 200px;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
 	box-shadow: 0px 0px 5px black;
-	display: none;
+
 }
 
 .sec5-box{
 	width: 100%;
 	justify-content: space-between;
-	overflow: hidden;
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 130px;
 	background-color: ;
 	padding: 15px;
+	
 }
+.sec5-list1{
+	position: relative;
+}
+.sec5-img{
+	position:absolute;
+	top: -100px;
+	left: 40%;
+}
+.sec5-img img{
+	opacity: 100%;
+	border-bottom: 4px solid rgb(170, 170, 170);
+	z-index: 99999999;
+}
+
+
 .sec5-box h4{
 	margin: 30px 0;
 	text-align: left;
@@ -567,7 +578,8 @@ button{
 .sec5-list{
 	width: 50%;
 	float: left;
-	overflow: hidden;
+	clear: right;
+
 	transition: .7s;
 	background-color: ;
 }
@@ -582,7 +594,7 @@ button{
 	width: 90%;
 	height: 250px;
 	margin: 20px auto;
-	padding: 10px;
+	padding: 25px 10px;
 	box-shadow: 0px 0px 5px black;
 	transition: .7s;
 	border-radius: 10px;
@@ -593,10 +605,11 @@ button{
 
 .sec5-list p{
 	width: 95%;
-	margin: 10px auto;
+	margin: 20px auto;
 	text-align: justify;
 	font-size: 22px;
 	padding: 10px;
+	padding-bottom: 20px;
 	transition: .7s;
 }
 .sec5-list1{
@@ -1295,4 +1308,21 @@ button{
 }
 .copy-right{
 	margin: 15px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:450px){
+
 }
