@@ -46,46 +46,56 @@ h2{
 
 
 
-.section-1{
-	background: ar(--primary);
-}
 
+
+.section-1{
+	padding: 25px;
+	position: relative;
+}
 
 .section-1 .social-icon{
 	position: absolute;
-	top: 150px;
+	top: 250px;
 	left: 100px;
 }
 .section-1 .social-icon i:hover{
-	color: #c22633;
+	color: #c22648;
 	transform: rotate(360deg);
-	border: 2px solid var(--primary);
+	border: 2px solid white;
 }
 .section-1 .social-icon i{
 	font-size: 24px;
 	margin: 5px;
 	padding: 5px;
 	transition: 1.5s;
-	border: 2px solid white;
+	border: 2px solid var(--primary);
 	border-radius: 50%;
 	padding: 7px;
 }
 
-.section-1{}
-.section-1 .header{
-	background: url(images/pexels-christina-morillo-1181396.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	height: 100vh;
 
+
+
+.banner-video-area{
+	position: relative;
+	overflow: hidden;
 }
-.section-1 .banner-area{
-	background-color:  rgba(0, 0, 0, .75);     /*rgba(214,210,205, .7);*/
+.banner-video video{
 	width: 100%;
-	height: 100vh;
+	height:100%;
+	position: relative;
+}
+
+
+
+.section-1 .banner-area{
+	background-color:  rgba(0, 0, 0, .75); 
+	width: 100%;
+	height: 100%;
 	color: white;
-	paddingr
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
  .logo{
@@ -99,9 +109,7 @@ h2{
 
 .nav-area{
 	width:100%;
-	background-image: url(images/IG Backgrounds/LLT IG Backgrounds FA-4.jpg);
-	background-repeat: no-repeat;
-	background-position: bottom;
+
 	overflow: hidden;
 }
 nav{
@@ -169,6 +177,7 @@ nav ul span button{
 .banner-heading h1{
 	margin: 25px 0;
 	font-size: 45px;
+	color: white;
 }
 
 .banner-heading p{
@@ -177,6 +186,7 @@ nav ul span button{
 	margin-top: 45px;
 	font-size: 22px;
 	font-weight: 400;
+	color: white;
 }
 .button-area{
 	width: 100%;
@@ -226,23 +236,16 @@ button{
 
 
 
-.section-1 {}
 .section-1 .header{
 	
 }
-.section-1 .banner-area{
-	background-image: url(images/banner.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	height: 90vh;
-	position: relative;
-}
 
 .section-1 .banner-layer{
-	background-color: rgba(0, 0, 0, .7);
+	/* background-color: rgba(0, 0, 0, .7); */
 	width: 100%;
-	height: 90vh;
+	height: 100%;
+	padding: 50px;
+
 }
 
 .banner-content-area{
@@ -251,6 +254,7 @@ button{
 
 .banner-content-area .banner-heading{
 	margin: 70px auto;
+	color: black;
 }
 
 
@@ -259,7 +263,7 @@ button{
 
 
 .section-2{
-	margin-top: 00px;
+	margin-top: 50px;
 	position: relative;
 	overflow: hidden;
 }
@@ -449,11 +453,11 @@ button{
 }
 .people-area{
 	height:60vh;
-	background-color: var(--secondary);
+	background-color: rgb(190, 190, 190);
 	position: relative;
 }
-.section-4 h2{
-	color: var(--primary);
+#section-4 .layer h2{
+	color: black;
 	margin-top: 75px;
 }
 
@@ -464,7 +468,6 @@ button{
 	position: relative;
 }
 .people-area .sub-layer{
-	position: bsolute;
 	margin-bottom: -80px;
 	padding: 50px 15px;
 	color: black;
@@ -488,17 +491,23 @@ button{
 	justify-content: space-between;
 	text-align: center;
 }
+.people-area .abc2:hover{
+	background-color: rgb(228, 228, 228);
+	color: black;
+	box-shadow: 0px 0px 10px black;
+}
 .people-area .abc2{
 	width: 100%;
 	height: 250px;
 	font-size: 22px;
-	background-color: var(--primary);
+	background-color: white;
 	margin: 25px 0;
 	padding: 20px;
 	font-size: 22px;
 	border-radius: 20px;
 	box-shadow: 0px 0px 5px black;
-	color: white;
+	color: rgb(0, 0, 0);
+	transition: .7s;
 }
 
 
@@ -506,12 +515,22 @@ button{
 
 
 
+.owl-nav{
+	font-size: 35px;
+	margin: 20px;
+	text-align: center;
+}
+.owl-prev{
+	margin-right: 20px;
+}
 
-
+.owl-nav:hover{
+	color: var(--primary);
+}
 
 
 .section-5{
-	margin: 150px 0;
+	margin: 250px 0;
 	margin-bottom: 0;
 	background-color: ;
 }
@@ -731,9 +750,9 @@ button{
 }
 .section-7 .list-area .lists{
 	font-size: 20px;
-	margin: 10px;
+	margin: 0px;
 	transition: .7s;
-	padding: 25px;
+	padding: 15px;
 	text-align: justify;
 }
 .section-7 .list-area .lists:hover{
@@ -772,6 +791,7 @@ button{
 	padding: 50px 0;
 	position: relative;
 	overflow: hidden;
+	display: none;
 }
 .sec8-dot{
 	width: 150px;
